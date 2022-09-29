@@ -24,9 +24,12 @@ router.put('/:id', flightsCtrl.update)
 //POST  /flights
 router.post('/', flightsCtrl.create)
 
+router.post('/:id/tickets', flightsCtrl.createTicket)
+
 //Delete
 
 router.delete('/:id', flightsCtrl.delete)
+
 
 
 
