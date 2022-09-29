@@ -14,7 +14,7 @@ const flightSchema = new Schema({
     enum: ['AUS', 'DFW', 'DEN', 'LAX', 'SAN'],
     default: 'DEN'
   },
-  FlightNo: {
+  flightNo: {
     type: Number,
     min: 10,
     max: 9999,
@@ -31,5 +31,5 @@ const Flight = mongoose.model('Flight', flightSchema)
 
 export {
   Flight, 
-  
+
 }
