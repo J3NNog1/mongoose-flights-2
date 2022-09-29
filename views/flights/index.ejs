@@ -26,7 +26,7 @@
           <td><%= flight.airline %></td>
           <td><%= flight.airport %></td>
           <td><%= flight.flightNo %></td>
-          <td><%= flight.departs.toDateString() %> </td>
+          <td><%= flight.departs?.toDateString() %> </td>
           <td><a href="/flights/<%= flight._id %>" <%- title === 'Flight Details' ? 'class="active"' : '' %>>Details</a></td>
           
           </tr>
